@@ -83,17 +83,17 @@ class Attribution(ModelNormal):
         return {
             'code': (str,),  # noqa: E501
             'title_fr': (str,),  # noqa: E501
-            'title_en': (str,),  # noqa: E501
+            'title_en': (str, none_type,),  # noqa: E501
             'year': (int,),  # noqa: E501
             'type': (LearningUnitTypeEnum,),  # noqa: E501
             'type_text': (str,),  # noqa: E501
             'credits': (str,),  # noqa: E501
-            'total_learning_unit_charge': (str,),  # noqa: E501
+            'total_learning_unit_charge': (str, none_type,),  # noqa: E501
             'start_year': (int,),  # noqa: E501
             'function': (AttributionFunctionEnum,),  # noqa: E501
             'function_text': (str,),  # noqa: E501
-            'lecturing_charge': (str,),  # noqa: E501
-            'practical_charge': (str,),  # noqa: E501
+            'lecturing_charge': (str, none_type,),  # noqa: E501
+            'practical_charge': (str, none_type,),  # noqa: E501
             'links': (AttributionLinks,),  # noqa: E501
         }
 
@@ -167,17 +167,17 @@ class Attribution(ModelNormal):
                                 _visited_composed_classes = (Animal,)
             code (str): [optional]  # noqa: E501
             title_fr (str): [optional]  # noqa: E501
-            title_en (str): [optional]  # noqa: E501
+            title_en (str, none_type): [optional]  # noqa: E501
             year (int): Year of learning unit. [optional]  # noqa: E501
             type (LearningUnitTypeEnum): [optional]  # noqa: E501
             type_text (str): [optional]  # noqa: E501
             credits (str): [optional]  # noqa: E501
-            total_learning_unit_charge (str): Total charge for learning unit year. [optional]  # noqa: E501
+            total_learning_unit_charge (str, none_type): Total charge for learning unit year. [optional]  # noqa: E501
             start_year (int): Start year of attribution. [optional]  # noqa: E501
             function (AttributionFunctionEnum): [optional]  # noqa: E501
             function_text (str): [optional]  # noqa: E501
-            lecturing_charge (str): [optional]  # noqa: E501
-            practical_charge (str): [optional]  # noqa: E501
+            lecturing_charge (str, none_type): [optional]  # noqa: E501
+            practical_charge (str, none_type): [optional]  # noqa: E501
             links (AttributionLinks): [optional]  # noqa: E501
         """
 
