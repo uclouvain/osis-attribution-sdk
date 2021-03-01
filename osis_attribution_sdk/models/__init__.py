@@ -14,3 +14,4 @@ from osis_attribution_sdk.model.attribution import Attribution
 from osis_attribution_sdk.model.attribution_function_enum import AttributionFunctionEnum
 from osis_attribution_sdk.model.attribution_links import AttributionLinks
 from osis_attribution_sdk.model.error import Error
+from osis_attribution_sdk.model.learning_unit_type_enum import LearningUnitTypeEnum

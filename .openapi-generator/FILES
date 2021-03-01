@@ -9,6 +9,7 @@ docs/AttributionApi.md
 docs/AttributionFunctionEnum.md
 docs/AttributionLinks.md
 docs/Error.md
+docs/LearningUnitTypeEnum.md
 git_push.sh
 osis_attribution_sdk/__init__.py
 osis_attribution_sdk/api/__init__.py
@@ -24,6 +25,7 @@ osis_attribution_sdk/model/attribution.py
 osis_attribution_sdk/model/attribution_function_enum.py
 osis_attribution_sdk/model/attribution_links.py
 osis_attribution_sdk/model/error.py
+osis_attribution_sdk/model/learning_unit_type_enum.py
 osis_attribution_sdk/model_utils.py
 osis_attribution_sdk/models/__init__.py
 osis_attribution_sdk/models/__init__.py
@@ -33,4 +35,5 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_learning_unit_type_enum.py
 tox.ini

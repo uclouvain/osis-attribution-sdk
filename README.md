@@ -99,6 +99,7 @@ Class | Method | HTTP request | Description
  - [AttributionFunctionEnum](docs/AttributionFunctionEnum.md)
  - [AttributionLinks](docs/AttributionLinks.md)
  - [Error](docs/Error.md)
+ - [LearningUnitTypeEnum](docs/LearningUnitTypeEnum.md)
 
 
 ## Documentation For Authorization
