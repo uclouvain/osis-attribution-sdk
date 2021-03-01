@@ -1,18 +1,18 @@
-# osis_attribution_sdk.ApplicationApi
+# osis_attribution_sdk.AttributionApi
 
 All URIs are relative to *https://dev.osis.uclouvain.be/api/v1/attribution*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**applicationcoursescalendars_list**](ApplicationApi.md#applicationcoursescalendars_list) | **GET** /application/calendars | 
+[**attributions_list**](AttributionApi.md#attributions_list) | **GET** /{year}/me | 
 
 
-# **applicationcoursescalendars_list**
-> [ApplicationCourseCalendar] applicationcoursescalendars_list()
+# **attributions_list**
+> [Attribution] attributions_list(year)
 
 
 
-Return all calendars related to application courses.
+Return all attributions of connected user in a specific year.
 
 ### Example
 
@@ -20,8 +20,8 @@ Return all calendars related to application courses.
 ```python
 import time
 import osis_attribution_sdk
-from osis_attribution_sdk.api import application_api
-from osis_attribution_sdk.model.application_course_calendar import ApplicationCourseCalendar
+from osis_attribution_sdk.api import attribution_api
+from osis_attribution_sdk.model.attribution import Attribution
 from osis_attribution_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://dev.osis.uclouvain.be/api/v1/attribution
@@ -44,22 +44,26 @@ configuration.api_key['Token'] = 'YOUR_API_KEY'
 # Enter a context with an instance of the API client
 with osis_attribution_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = application_api.ApplicationApi(api_client)
+    api_instance = attribution_api.AttributionApi(api_client)
+    year = "year_example" # str | 
 
-    # example, this endpoint has no required or optional parameters
+    # example passing only required values which don't have defaults set
     try:
-        api_response = api_instance.applicationcoursescalendars_list()
+        api_response = api_instance.attributions_list(year)
         pprint(api_response)
     except osis_attribution_sdk.ApiException as e:
-        print("Exception when calling ApplicationApi->applicationcoursescalendars_list: %s\n" % e)
+        print("Exception when calling AttributionApi->attributions_list: %s\n" % e)
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **year** | **str**|  |
 
 ### Return type
 
-[**[ApplicationCourseCalendar]**](ApplicationCourseCalendar.md)
+[**[Attribution]**](Attribution.md)
 
 ### Authorization
 
