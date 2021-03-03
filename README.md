@@ -89,7 +89,8 @@ All URIs are relative to *https://dev.osis.uclouvain.be/api/v1/attribution*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *ApplicationApi* | [**applicationcoursescalendars_list**](docs/ApplicationApi.md#applicationcoursescalendars_list) | **GET** /application/calendars | 
-*AttributionApi* | [**attributions_list**](docs/AttributionApi.md#attributions_list) | **GET** /{year}/me | 
+*AttributionApi* | [**attributions_list**](docs/AttributionApi.md#attributions_list) | **GET** /{year}/{global_id}/ | 
+*AttributionApi* | [**myattributions_list**](docs/AttributionApi.md#myattributions_list) | **GET** /{year}/me | 
 
 
 ## Documentation For Models
