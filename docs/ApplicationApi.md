@@ -1,4 +1,4 @@
-# openapi_client.ApplicationApi
+# osis_attribution_sdk.ApplicationApi
 
 All URIs are relative to *https://dev.osis.uclouvain.be/api/v1/attribution*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **applicationcoursescalendars_list**
-> list[ApplicationCourseCalendar] applicationcoursescalendars_list()
+> [ApplicationCourseCalendar] applicationcoursescalendars_list()
 
 
 
@@ -18,14 +18,15 @@ Return all calendars related to application courses.
 
 * Api Key Authentication (Token):
 ```python
-from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import osis_attribution_sdk
+from osis_attribution_sdk.api import application_api
+from osis_attribution_sdk.model.application_course_calendar import ApplicationCourseCalendar
+from osis_attribution_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://dev.osis.uclouvain.be/api/v1/attribution
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = osis_attribution_sdk.Configuration(
     host = "https://dev.osis.uclouvain.be/api/v1/attribution"
 )
 
@@ -41,14 +42,15 @@ configuration.api_key['Token'] = 'YOUR_API_KEY'
 # configuration.api_key_prefix['Token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with osis_attribution_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ApplicationApi(api_client)
-    
+    api_instance = application_api.ApplicationApi(api_client)
+
+    # example, this endpoint has no required or optional parameters
     try:
         api_response = api_instance.applicationcoursescalendars_list()
         pprint(api_response)
-    except ApiException as e:
+    except osis_attribution_sdk.ApiException as e:
         print("Exception when calling ApplicationApi->applicationcoursescalendars_list: %s\n" % e)
 ```
 
@@ -57,7 +59,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**list[ApplicationCourseCalendar]**](ApplicationCourseCalendar.md)
+[**[ApplicationCourseCalendar]**](ApplicationCourseCalendar.md)
 
 ### Authorization
 
