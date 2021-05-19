@@ -10,7 +10,7 @@
 """
 
 
-__version__ = "1.11.0"
+__version__ = "1.12.0"
 
 # import ApiClient
 from osis_attribution_sdk.api_client import ApiClient

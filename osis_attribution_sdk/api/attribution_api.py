@@ -57,6 +57,7 @@ class AttributionApi(object):
                 global_id (str):
 
             Keyword Args:
+                with_classes (bool): [optional]
                 _return_http_data_only (bool): response data without head status
                     code and headers. Default is True.
                 _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -122,6 +123,7 @@ class AttributionApi(object):
                 'all': [
                     'year',
                     'global_id',
+                    'with_classes',
                 ],
                 'required': [
                     'year',
@@ -144,14 +146,18 @@ class AttributionApi(object):
                         (str,),
                     'global_id':
                         (str,),
+                    'with_classes':
+                        (bool,),
                 },
                 'attribute_map': {
                     'year': 'year',
                     'global_id': 'global_id',
+                    'with_classes': 'with_classes',
                 },
                 'location_map': {
                     'year': 'path',
                     'global_id': 'path',
+                    'with_classes': 'query',
                 },
                 'collection_format_map': {
                 }
@@ -184,6 +190,7 @@ class AttributionApi(object):
                 year (str):
 
             Keyword Args:
+                with_classes (bool): [optional]
                 _return_http_data_only (bool): response data without head status
                     code and headers. Default is True.
                 _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -246,6 +253,7 @@ class AttributionApi(object):
             params_map={
                 'all': [
                     'year',
+                    'with_classes',
                 ],
                 'required': [
                     'year',
@@ -265,12 +273,16 @@ class AttributionApi(object):
                 'openapi_types': {
                     'year':
                         (str,),
+                    'with_classes':
+                        (bool,),
                 },
                 'attribute_map': {
                     'year': 'year',
+                    'with_classes': 'with_classes',
                 },
                 'location_map': {
                     'year': 'path',
+                    'with_classes': 'query',
                 },
                 'collection_format_map': {
                 }
