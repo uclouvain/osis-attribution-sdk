@@ -1,4 +1,4 @@
-# osis_attribution_sdk.AttributionApi
+# openapi_client.AttributionApi
 
 All URIs are relative to *https://dev.osis.uclouvain.be/api/v1/attribution*
 
@@ -20,14 +20,14 @@ Return all attributions of specific user in a specific year.
 * Api Key Authentication (Token):
 ```python
 import time
-import osis_attribution_sdk
-from osis_attribution_sdk.api import attribution_api
-from osis_attribution_sdk.model.attribution import Attribution
-from osis_attribution_sdk.model.error import Error
+import openapi_client
+from openapi_client.api import attribution_api
+from openapi_client.model.error import Error
+from openapi_client.model.attribution import Attribution
 from pprint import pprint
 # Defining the host is optional and defaults to https://dev.osis.uclouvain.be/api/v1/attribution
 # See configuration.py for a list of all supported configuration parameters.
-configuration = osis_attribution_sdk.Configuration(
+configuration = openapi_client.Configuration(
     host = "https://dev.osis.uclouvain.be/api/v1/attribution"
 )
 
@@ -43,17 +43,26 @@ configuration.api_key['Token'] = 'YOUR_API_KEY'
 # configuration.api_key_prefix['Token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with osis_attribution_sdk.ApiClient(configuration) as api_client:
+with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = attribution_api.AttributionApi(api_client)
     year = "year_example" # str | 
     global_id = "global_id_example" # str | 
+    with_classes = True # bool |  (optional)
 
     # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.attributions_list(year, global_id)
         pprint(api_response)
-    except osis_attribution_sdk.ApiException as e:
+    except openapi_client.ApiException as e:
+        print("Exception when calling AttributionApi->attributions_list: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        api_response = api_instance.attributions_list(year, global_id, with_classes=with_classes)
+        pprint(api_response)
+    except openapi_client.ApiException as e:
         print("Exception when calling AttributionApi->attributions_list: %s\n" % e)
 ```
 
@@ -63,6 +72,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **str**|  |
  **global_id** | **str**|  |
+ **with_classes** | **bool**|  | [optional]
 
 ### Return type
 
@@ -99,14 +109,14 @@ Return all attributions of connected user in a specific year.
 * Api Key Authentication (Token):
 ```python
 import time
-import osis_attribution_sdk
-from osis_attribution_sdk.api import attribution_api
-from osis_attribution_sdk.model.attribution import Attribution
-from osis_attribution_sdk.model.error import Error
+import openapi_client
+from openapi_client.api import attribution_api
+from openapi_client.model.error import Error
+from openapi_client.model.attribution import Attribution
 from pprint import pprint
 # Defining the host is optional and defaults to https://dev.osis.uclouvain.be/api/v1/attribution
 # See configuration.py for a list of all supported configuration parameters.
-configuration = osis_attribution_sdk.Configuration(
+configuration = openapi_client.Configuration(
     host = "https://dev.osis.uclouvain.be/api/v1/attribution"
 )
 
@@ -122,16 +132,25 @@ configuration.api_key['Token'] = 'YOUR_API_KEY'
 # configuration.api_key_prefix['Token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with osis_attribution_sdk.ApiClient(configuration) as api_client:
+with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = attribution_api.AttributionApi(api_client)
     year = "year_example" # str | 
+    with_classes = True # bool |  (optional)
 
     # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.myattributions_list(year)
         pprint(api_response)
-    except osis_attribution_sdk.ApiException as e:
+    except openapi_client.ApiException as e:
+        print("Exception when calling AttributionApi->myattributions_list: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        api_response = api_instance.myattributions_list(year, with_classes=with_classes)
+        pprint(api_response)
+    except openapi_client.ApiException as e:
         print("Exception when calling AttributionApi->myattributions_list: %s\n" % e)
 ```
 
@@ -140,6 +159,7 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **str**|  |
+ **with_classes** | **bool**|  | [optional]
 
 ### Return type
 
