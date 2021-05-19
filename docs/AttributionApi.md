@@ -48,10 +48,19 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     api_instance = attribution_api.AttributionApi(api_client)
     year = "year_example" # str | 
     global_id = "global_id_example" # str | 
+    with_classes = True # bool |  (optional)
 
     # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.attributions_list(year, global_id)
+        pprint(api_response)
+    except osis_attribution_sdk.ApiException as e:
+        print("Exception when calling AttributionApi->attributions_list: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        api_response = api_instance.attributions_list(year, global_id, with_classes=with_classes)
         pprint(api_response)
     except osis_attribution_sdk.ApiException as e:
         print("Exception when calling AttributionApi->attributions_list: %s\n" % e)
@@ -63,6 +72,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **str**|  |
  **global_id** | **str**|  |
+ **with_classes** | **bool**|  | [optional]
 
 ### Return type
 
@@ -126,10 +136,19 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = attribution_api.AttributionApi(api_client)
     year = "year_example" # str | 
+    with_classes = True # bool |  (optional)
 
     # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.myattributions_list(year)
+        pprint(api_response)
+    except osis_attribution_sdk.ApiException as e:
+        print("Exception when calling AttributionApi->myattributions_list: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        api_response = api_instance.myattributions_list(year, with_classes=with_classes)
         pprint(api_response)
     except osis_attribution_sdk.ApiException as e:
         print("Exception when calling AttributionApi->myattributions_list: %s\n" % e)
@@ -140,6 +159,7 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **str**|  |
+ **with_classes** | **bool**|  | [optional]
 
 ### Return type
 
