@@ -24,6 +24,7 @@ import osis_attribution_sdk
 from osis_attribution_sdk.api import attribution_api
 from osis_attribution_sdk.model.attribution import Attribution
 from osis_attribution_sdk.model.error import Error
+from osis_attribution_sdk.model.accepted_language_enum import AcceptedLanguageEnum
 from pprint import pprint
 # Defining the host is optional and defaults to https://dev.osis.uclouvain.be/api/v1/attribution
 # See configuration.py for a list of all supported configuration parameters.
@@ -48,6 +49,7 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     api_instance = attribution_api.AttributionApi(api_client)
     year = "year_example" # str | 
     global_id = "global_id_example" # str | 
+    accept_language = AcceptedLanguageEnum("en") # AcceptedLanguageEnum | The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  (optional)
     with_classes = True # bool |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -60,7 +62,7 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        api_response = api_instance.attributions_list(year, global_id, with_classes=with_classes)
+        api_response = api_instance.attributions_list(year, global_id, accept_language=accept_language, with_classes=with_classes)
         pprint(api_response)
     except osis_attribution_sdk.ApiException as e:
         print("Exception when calling AttributionApi->attributions_list: %s\n" % e)
@@ -72,6 +74,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **str**|  |
  **global_id** | **str**|  |
+ **accept_language** | **AcceptedLanguageEnum**| The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  | [optional]
  **with_classes** | **bool**|  | [optional]
 
 ### Return type
@@ -113,6 +116,7 @@ import osis_attribution_sdk
 from osis_attribution_sdk.api import attribution_api
 from osis_attribution_sdk.model.attribution import Attribution
 from osis_attribution_sdk.model.error import Error
+from osis_attribution_sdk.model.accepted_language_enum import AcceptedLanguageEnum
 from pprint import pprint
 # Defining the host is optional and defaults to https://dev.osis.uclouvain.be/api/v1/attribution
 # See configuration.py for a list of all supported configuration parameters.
@@ -136,6 +140,7 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = attribution_api.AttributionApi(api_client)
     year = "year_example" # str | 
+    accept_language = AcceptedLanguageEnum("en") # AcceptedLanguageEnum | The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  (optional)
     with_classes = True # bool |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -148,7 +153,7 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        api_response = api_instance.myattributions_list(year, with_classes=with_classes)
+        api_response = api_instance.myattributions_list(year, accept_language=accept_language, with_classes=with_classes)
         pprint(api_response)
     except osis_attribution_sdk.ApiException as e:
         print("Exception when calling AttributionApi->myattributions_list: %s\n" % e)
@@ -159,6 +164,7 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **str**|  |
+ **accept_language** | **AcceptedLanguageEnum**| The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  | [optional]
  **with_classes** | **bool**|  | [optional]
 
 ### Return type
