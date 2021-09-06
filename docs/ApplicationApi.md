@@ -63,6 +63,10 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
         course_summary="course_summary_example",
     ) # ApplicationCreateCommand | 
     accept_language = AcceptedLanguageEnum("en") # AcceptedLanguageEnum | The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  (optional)
+    x_user_first_name = "X-User-FirstName_example" # str |  (optional)
+    x_user_last_name = "X-User-LastName_example" # str |  (optional)
+    x_user_email = "X-User-Email_example" # str |  (optional)
+    x_user_global_id = "X-User-GlobalID_example" # str |  (optional)
 
     # example passing only required values which don't have defaults set
     try:
@@ -74,11 +78,12 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        api_response = api_instance.application_create(application_create_command, accept_language=accept_language)
+        api_response = api_instance.application_create(application_create_command, accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id)
         pprint(api_response)
     except osis_attribution_sdk.ApiException as e:
         print("Exception when calling ApplicationApi->application_create: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -86,6 +91,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application_create_command** | [**ApplicationCreateCommand**](ApplicationCreateCommand.md)|  |
  **accept_language** | **AcceptedLanguageEnum**| The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  | [optional]
+ **x_user_first_name** | **str**|  | [optional]
+ **x_user_last_name** | **str**|  | [optional]
+ **x_user_email** | **str**|  | [optional]
+ **x_user_global_id** | **str**|  | [optional]
 
 ### Return type
 
@@ -99,6 +108,7 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -150,6 +160,10 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     api_instance = application_api.ApplicationApi(api_client)
     application_uuid = "application_uuid_example" # str | 
     accept_language = AcceptedLanguageEnum("en") # AcceptedLanguageEnum | The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  (optional)
+    x_user_first_name = "X-User-FirstName_example" # str |  (optional)
+    x_user_last_name = "X-User-LastName_example" # str |  (optional)
+    x_user_email = "X-User-Email_example" # str |  (optional)
+    x_user_global_id = "X-User-GlobalID_example" # str |  (optional)
 
     # example passing only required values which don't have defaults set
     try:
@@ -160,10 +174,11 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        api_instance.application_delete(application_uuid, accept_language=accept_language)
+        api_instance.application_delete(application_uuid, accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id)
     except osis_attribution_sdk.ApiException as e:
         print("Exception when calling ApplicationApi->application_delete: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -171,6 +186,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application_uuid** | **str**|  |
  **accept_language** | **AcceptedLanguageEnum**| The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  | [optional]
+ **x_user_first_name** | **str**|  | [optional]
+ **x_user_last_name** | **str**|  | [optional]
+ **x_user_email** | **str**|  | [optional]
+ **x_user_global_id** | **str**|  | [optional]
 
 ### Return type
 
@@ -184,6 +203,7 @@ void (empty response body)
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -235,21 +255,30 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = application_api.ApplicationApi(api_client)
     accept_language = AcceptedLanguageEnum("en") # AcceptedLanguageEnum | The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  (optional)
+    x_user_first_name = "X-User-FirstName_example" # str |  (optional)
+    x_user_last_name = "X-User-LastName_example" # str |  (optional)
+    x_user_email = "X-User-Email_example" # str |  (optional)
+    x_user_global_id = "X-User-GlobalID_example" # str |  (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        api_response = api_instance.application_list(accept_language=accept_language)
+        api_response = api_instance.application_list(accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id)
         pprint(api_response)
     except osis_attribution_sdk.ApiException as e:
         print("Exception when calling ApplicationApi->application_list: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **accept_language** | **AcceptedLanguageEnum**| The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  | [optional]
+ **x_user_first_name** | **str**|  | [optional]
+ **x_user_last_name** | **str**|  | [optional]
+ **x_user_email** | **str**|  | [optional]
+ **x_user_global_id** | **str**|  | [optional]
 
 ### Return type
 
@@ -263,6 +292,7 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -321,6 +351,10 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
         course_summary="course_summary_example",
     ) # ApplicationUpdateCommand | 
     accept_language = AcceptedLanguageEnum("en") # AcceptedLanguageEnum | The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  (optional)
+    x_user_first_name = "X-User-FirstName_example" # str |  (optional)
+    x_user_last_name = "X-User-LastName_example" # str |  (optional)
+    x_user_email = "X-User-Email_example" # str |  (optional)
+    x_user_global_id = "X-User-GlobalID_example" # str |  (optional)
 
     # example passing only required values which don't have defaults set
     try:
@@ -332,11 +366,12 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        api_response = api_instance.application_update(application_uuid, application_update_command, accept_language=accept_language)
+        api_response = api_instance.application_update(application_uuid, application_update_command, accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id)
         pprint(api_response)
     except osis_attribution_sdk.ApiException as e:
         print("Exception when calling ApplicationApi->application_update: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -345,6 +380,10 @@ Name | Type | Description  | Notes
  **application_uuid** | **str**|  |
  **application_update_command** | [**ApplicationUpdateCommand**](ApplicationUpdateCommand.md)|  |
  **accept_language** | **AcceptedLanguageEnum**| The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  | [optional]
+ **x_user_first_name** | **str**|  | [optional]
+ **x_user_last_name** | **str**|  | [optional]
+ **x_user_email** | **str**|  | [optional]
+ **x_user_global_id** | **str**|  | [optional]
 
 ### Return type
 
@@ -358,6 +397,7 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -409,21 +449,30 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = application_api.ApplicationApi(api_client)
     accept_language = AcceptedLanguageEnum("en") # AcceptedLanguageEnum | The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  (optional)
+    x_user_first_name = "X-User-FirstName_example" # str |  (optional)
+    x_user_last_name = "X-User-LastName_example" # str |  (optional)
+    x_user_email = "X-User-Email_example" # str |  (optional)
+    x_user_global_id = "X-User-GlobalID_example" # str |  (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        api_response = api_instance.applicationcoursescalendars_list(accept_language=accept_language)
+        api_response = api_instance.applicationcoursescalendars_list(accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id)
         pprint(api_response)
     except osis_attribution_sdk.ApiException as e:
         print("Exception when calling ApplicationApi->applicationcoursescalendars_list: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **accept_language** | **AcceptedLanguageEnum**| The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  | [optional]
+ **x_user_first_name** | **str**|  | [optional]
+ **x_user_last_name** | **str**|  | [optional]
+ **x_user_email** | **str**|  | [optional]
+ **x_user_global_id** | **str**|  | [optional]
 
 ### Return type
 
@@ -437,6 +486,7 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -487,20 +537,29 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = application_api.ApplicationApi(api_client)
     accept_language = AcceptedLanguageEnum("en") # AcceptedLanguageEnum | The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  (optional)
+    x_user_first_name = "X-User-FirstName_example" # str |  (optional)
+    x_user_last_name = "X-User-LastName_example" # str |  (optional)
+    x_user_email = "X-User-Email_example" # str |  (optional)
+    x_user_global_id = "X-User-GlobalID_example" # str |  (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        api_instance.applications_summary_send(accept_language=accept_language)
+        api_instance.applications_summary_send(accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id)
     except osis_attribution_sdk.ApiException as e:
         print("Exception when calling ApplicationApi->applications_summary_send: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **accept_language** | **AcceptedLanguageEnum**| The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  | [optional]
+ **x_user_first_name** | **str**|  | [optional]
+ **x_user_last_name** | **str**|  | [optional]
+ **x_user_email** | **str**|  | [optional]
+ **x_user_global_id** | **str**|  | [optional]
 
 ### Return type
 
@@ -514,6 +573,7 @@ void (empty response body)
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -565,21 +625,30 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = application_api.ApplicationApi(api_client)
     accept_language = AcceptedLanguageEnum("en") # AcceptedLanguageEnum | The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  (optional)
+    x_user_first_name = "X-User-FirstName_example" # str |  (optional)
+    x_user_last_name = "X-User-LastName_example" # str |  (optional)
+    x_user_email = "X-User-Email_example" # str |  (optional)
+    x_user_global_id = "X-User-GlobalID_example" # str |  (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        api_response = api_instance.attributionsabouttoexpire_list(accept_language=accept_language)
+        api_response = api_instance.attributionsabouttoexpire_list(accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id)
         pprint(api_response)
     except osis_attribution_sdk.ApiException as e:
         print("Exception when calling ApplicationApi->attributionsabouttoexpire_list: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **accept_language** | **AcceptedLanguageEnum**| The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  | [optional]
+ **x_user_first_name** | **str**|  | [optional]
+ **x_user_last_name** | **str**|  | [optional]
+ **x_user_email** | **str**|  | [optional]
+ **x_user_global_id** | **str**|  | [optional]
 
 ### Return type
 
@@ -593,6 +662,7 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -649,6 +719,10 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
         ],
     ) # RenewAttributionAboutToExpireCommand | 
     accept_language = AcceptedLanguageEnum("en") # AcceptedLanguageEnum | The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  (optional)
+    x_user_first_name = "X-User-FirstName_example" # str |  (optional)
+    x_user_last_name = "X-User-LastName_example" # str |  (optional)
+    x_user_email = "X-User-Email_example" # str |  (optional)
+    x_user_global_id = "X-User-GlobalID_example" # str |  (optional)
 
     # example passing only required values which don't have defaults set
     try:
@@ -659,10 +733,11 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        api_instance.attributionsabouttoexpire_renew(renew_attribution_about_to_expire_command, accept_language=accept_language)
+        api_instance.attributionsabouttoexpire_renew(renew_attribution_about_to_expire_command, accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id)
     except osis_attribution_sdk.ApiException as e:
         print("Exception when calling ApplicationApi->attributionsabouttoexpire_renew: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -670,6 +745,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **renew_attribution_about_to_expire_command** | [**RenewAttributionAboutToExpireCommand**](RenewAttributionAboutToExpireCommand.md)|  |
  **accept_language** | **AcceptedLanguageEnum**| The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  | [optional]
+ **x_user_first_name** | **str**|  | [optional]
+ **x_user_last_name** | **str**|  | [optional]
+ **x_user_email** | **str**|  | [optional]
+ **x_user_global_id** | **str**|  | [optional]
 
 ### Return type
 
@@ -683,6 +762,7 @@ void (empty response body)
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -734,21 +814,30 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = application_api.ApplicationApi(api_client)
     accept_language = AcceptedLanguageEnum("en") # AcceptedLanguageEnum | The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  (optional)
+    x_user_first_name = "X-User-FirstName_example" # str |  (optional)
+    x_user_last_name = "X-User-LastName_example" # str |  (optional)
+    x_user_email = "X-User-Email_example" # str |  (optional)
+    x_user_global_id = "X-User-GlobalID_example" # str |  (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        api_response = api_instance.my_charge_summary(accept_language=accept_language)
+        api_response = api_instance.my_charge_summary(accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id)
         pprint(api_response)
     except osis_attribution_sdk.ApiException as e:
         print("Exception when calling ApplicationApi->my_charge_summary: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **accept_language** | **AcceptedLanguageEnum**| The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  | [optional]
+ **x_user_first_name** | **str**|  | [optional]
+ **x_user_last_name** | **str**|  | [optional]
+ **x_user_email** | **str**|  | [optional]
+ **x_user_global_id** | **str**|  | [optional]
 
 ### Return type
 
@@ -762,6 +851,7 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -813,23 +903,32 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = application_api.ApplicationApi(api_client)
     accept_language = AcceptedLanguageEnum("en") # AcceptedLanguageEnum | The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  (optional)
+    x_user_first_name = "X-User-FirstName_example" # str |  (optional)
+    x_user_last_name = "X-User-LastName_example" # str |  (optional)
+    x_user_email = "X-User-Email_example" # str |  (optional)
+    x_user_global_id = "X-User-GlobalID_example" # str |  (optional)
     code = "code_example" # str |  (optional)
     allocation_faculty = "allocation_faculty_example" # str |  (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        api_response = api_instance.vacantcourses_list(accept_language=accept_language, code=code, allocation_faculty=allocation_faculty)
+        api_response = api_instance.vacantcourses_list(accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id, code=code, allocation_faculty=allocation_faculty)
         pprint(api_response)
     except osis_attribution_sdk.ApiException as e:
         print("Exception when calling ApplicationApi->vacantcourses_list: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **accept_language** | **AcceptedLanguageEnum**| The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  | [optional]
+ **x_user_first_name** | **str**|  | [optional]
+ **x_user_last_name** | **str**|  | [optional]
+ **x_user_email** | **str**|  | [optional]
+ **x_user_global_id** | **str**|  | [optional]
  **code** | **str**|  | [optional]
  **allocation_faculty** | **str**|  | [optional]
 
@@ -845,6 +944,7 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |

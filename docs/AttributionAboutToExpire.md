@@ -1,5 +1,6 @@
 # AttributionAboutToExpire
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -18,6 +19,7 @@ Name | Type | Description | Notes
 **practical_volume_available** | **str, none_type** |  | [optional] 
 **unavailable_renewal_reason** | **str, none_type** |  | [optional] 
 **is_renewable** | **bool** |  | [optional] 
+**any string name** | **bool, date, datetime, dict, float, int, list, str, none_type** | any string name can be used but the value must be the correct type | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -50,6 +50,10 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     year = "year_example" # str | 
     global_id = "global_id_example" # str | 
     accept_language = AcceptedLanguageEnum("en") # AcceptedLanguageEnum | The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  (optional)
+    x_user_first_name = "X-User-FirstName_example" # str |  (optional)
+    x_user_last_name = "X-User-LastName_example" # str |  (optional)
+    x_user_email = "X-User-Email_example" # str |  (optional)
+    x_user_global_id = "X-User-GlobalID_example" # str |  (optional)
     with_classes = True # bool |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -62,11 +66,12 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        api_response = api_instance.attributions_list(year, global_id, accept_language=accept_language, with_classes=with_classes)
+        api_response = api_instance.attributions_list(year, global_id, accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id, with_classes=with_classes)
         pprint(api_response)
     except osis_attribution_sdk.ApiException as e:
         print("Exception when calling AttributionApi->attributions_list: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -75,6 +80,10 @@ Name | Type | Description  | Notes
  **year** | **str**|  |
  **global_id** | **str**|  |
  **accept_language** | **AcceptedLanguageEnum**| The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  | [optional]
+ **x_user_first_name** | **str**|  | [optional]
+ **x_user_last_name** | **str**|  | [optional]
+ **x_user_email** | **str**|  | [optional]
+ **x_user_global_id** | **str**|  | [optional]
  **with_classes** | **bool**|  | [optional]
 
 ### Return type
@@ -89,6 +98,7 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -141,7 +151,11 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     api_instance = attribution_api.AttributionApi(api_client)
     year = "year_example" # str | 
     accept_language = AcceptedLanguageEnum("en") # AcceptedLanguageEnum | The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  (optional)
-    with_classes = True # bool |  (optional)
+    x_user_first_name = "X-User-FirstName_example" # str |  (optional)
+    x_user_last_name = "X-User-LastName_example" # str |  (optional)
+    x_user_email = "X-User-Email_example" # str |  (optional)
+    x_user_global_id = "X-User-GlobalID_example" # str |  (optional)
+    with_effective_class_repartition = True # bool |  (optional)
 
     # example passing only required values which don't have defaults set
     try:
@@ -153,11 +167,12 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        api_response = api_instance.myattributions_list(year, accept_language=accept_language, with_classes=with_classes)
+        api_response = api_instance.myattributions_list(year, accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id, with_effective_class_repartition=with_effective_class_repartition)
         pprint(api_response)
     except osis_attribution_sdk.ApiException as e:
         print("Exception when calling AttributionApi->myattributions_list: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -165,7 +180,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **str**|  |
  **accept_language** | **AcceptedLanguageEnum**| The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  | [optional]
- **with_classes** | **bool**|  | [optional]
+ **x_user_first_name** | **str**|  | [optional]
+ **x_user_last_name** | **str**|  | [optional]
+ **x_user_email** | **str**|  | [optional]
+ **x_user_global_id** | **str**|  | [optional]
+ **with_effective_class_repartition** | **bool**|  | [optional]
 
 ### Return type
 
@@ -179,6 +198,7 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
