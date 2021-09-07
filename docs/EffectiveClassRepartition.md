@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | [**Str**](Str.md) |  | [optional] 
+**code** | **str** |  | [optional] 
 **title_fr** | **str** |  | [optional] 
 **title_en** | **str, none_type** |  | [optional] 
 **lecturing_charge** | **str, none_type** |  | [optional] 
