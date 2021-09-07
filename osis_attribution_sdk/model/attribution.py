@@ -32,9 +32,11 @@ from osis_attribution_sdk.exceptions import ApiAttributeError
 def lazy_import():
     from osis_attribution_sdk.model.attribution_function_enum import AttributionFunctionEnum
     from osis_attribution_sdk.model.attribution_links import AttributionLinks
+    from osis_attribution_sdk.model.effective_class_repartition import EffectiveClassRepartition
     from osis_attribution_sdk.model.learning_unit_type_enum import LearningUnitTypeEnum
     globals()['AttributionFunctionEnum'] = AttributionFunctionEnum
     globals()['AttributionLinks'] = AttributionLinks
+    globals()['EffectiveClassRepartition'] = EffectiveClassRepartition
     globals()['LearningUnitTypeEnum'] = LearningUnitTypeEnum
 
 
@@ -106,6 +108,7 @@ class Attribution(ModelNormal):
             'lecturing_charge': (str, none_type,),  # noqa: E501
             'practical_charge': (str, none_type,),  # noqa: E501
             'links': (AttributionLinks,),  # noqa: E501
+            'effective_class_repartition': ([EffectiveClassRepartition],),  # noqa: E501
         }
 
     @cached_property
@@ -129,6 +132,7 @@ class Attribution(ModelNormal):
         'lecturing_charge': 'lecturing_charge',  # noqa: E501
         'practical_charge': 'practical_charge',  # noqa: E501
         'links': 'links',  # noqa: E501
+        'effective_class_repartition': 'effective_class_repartition',  # noqa: E501
     }
 
     read_only_vars = {
@@ -187,6 +191,7 @@ class Attribution(ModelNormal):
             lecturing_charge (str, none_type): [optional]  # noqa: E501
             practical_charge (str, none_type): [optional]  # noqa: E501
             links (AttributionLinks): [optional]  # noqa: E501
+            effective_class_repartition ([EffectiveClassRepartition]): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
@@ -283,6 +288,7 @@ class Attribution(ModelNormal):
             lecturing_charge (str, none_type): [optional]  # noqa: E501
             practical_charge (str, none_type): [optional]  # noqa: E501
             links (AttributionLinks): [optional]  # noqa: E501
+            effective_class_repartition ([EffectiveClassRepartition]): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)

@@ -135,6 +135,7 @@ Class | Method | HTTP request | Description
  - [AttributionAboutToExpireList](docs/AttributionAboutToExpireList.md)
  - [AttributionFunctionEnum](docs/AttributionFunctionEnum.md)
  - [AttributionLinks](docs/AttributionLinks.md)
+ - [EffectiveClassRepartition](docs/EffectiveClassRepartition.md)
  - [Error](docs/Error.md)
  - [LearningUnitTypeEnum](docs/LearningUnitTypeEnum.md)
  - [MyChargeSummary](docs/MyChargeSummary.md)

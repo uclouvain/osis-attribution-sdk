@@ -15,6 +15,7 @@ docs/AttributionAboutToExpireList.md
 docs/AttributionApi.md
 docs/AttributionFunctionEnum.md
 docs/AttributionLinks.md
+docs/EffectiveClassRepartition.md
 docs/Error.md
 docs/LearningUnitTypeEnum.md
 docs/MyChargeSummary.md
@@ -45,6 +46,7 @@ osis_attribution_sdk/model/attribution_about_to_expire.py
 osis_attribution_sdk/model/attribution_about_to_expire_list.py
 osis_attribution_sdk/model/attribution_function_enum.py
 osis_attribution_sdk/model/attribution_links.py
+osis_attribution_sdk/model/effective_class_repartition.py
 osis_attribution_sdk/model/error.py
 osis_attribution_sdk/model/learning_unit_type_enum.py
 osis_attribution_sdk/model/my_charge_summary.py
@@ -62,4 +64,5 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_effective_class_repartition.py
 tox.ini
