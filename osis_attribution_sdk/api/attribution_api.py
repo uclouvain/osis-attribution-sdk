@@ -63,7 +63,7 @@ class AttributionApi(object):
                 x_user_last_name (str): [optional]
                 x_user_email (str): [optional]
                 x_user_global_id (str): [optional]
-                with_classes (bool): [optional]
+                with_effective_class_repartition (bool): [optional]
                 _return_http_data_only (bool): response data without head status
                     code and headers. Default is True.
                 _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -134,7 +134,7 @@ class AttributionApi(object):
                     'x_user_last_name',
                     'x_user_email',
                     'x_user_global_id',
-                    'with_classes',
+                    'with_effective_class_repartition',
                 ],
                 'required': [
                     'year',
@@ -167,7 +167,7 @@ class AttributionApi(object):
                         (str,),
                     'x_user_global_id':
                         (str,),
-                    'with_classes':
+                    'with_effective_class_repartition':
                         (bool,),
                 },
                 'attribute_map': {
@@ -178,7 +178,7 @@ class AttributionApi(object):
                     'x_user_last_name': 'X-User-LastName',
                     'x_user_email': 'X-User-Email',
                     'x_user_global_id': 'X-User-GlobalID',
-                    'with_classes': 'with_classes',
+                    'with_effective_class_repartition': 'with_effective_class_repartition',
                 },
                 'location_map': {
                     'year': 'path',
@@ -188,7 +188,7 @@ class AttributionApi(object):
                     'x_user_last_name': 'header',
                     'x_user_email': 'header',
                     'x_user_global_id': 'header',
-                    'with_classes': 'query',
+                    'with_effective_class_repartition': 'query',
                 },
                 'collection_format_map': {
                 }
