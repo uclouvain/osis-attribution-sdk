@@ -84,8 +84,6 @@ class EffectiveClassRepartition(ModelNormal):
             'code': (str,),  # noqa: E501
             'title_fr': (str,),  # noqa: E501
             'title_en': (str, none_type,),  # noqa: E501
-            'lecturing_charge': (str, none_type,),  # noqa: E501
-            'practical_charge': (str, none_type,),  # noqa: E501
             'schedule_link': (str, none_type,),  # noqa: E501
             'has_peps': (bool,),  # noqa: E501
         }
@@ -99,8 +97,6 @@ class EffectiveClassRepartition(ModelNormal):
         'code': 'code',  # noqa: E501
         'title_fr': 'title_fr',  # noqa: E501
         'title_en': 'title_en',  # noqa: E501
-        'lecturing_charge': 'lecturing_charge',  # noqa: E501
-        'practical_charge': 'practical_charge',  # noqa: E501
         'schedule_link': 'schedule_link',  # noqa: E501
         'has_peps': 'has_peps',  # noqa: E501
     }
@@ -149,8 +145,6 @@ class EffectiveClassRepartition(ModelNormal):
             code (str): [optional]  # noqa: E501
             title_fr (str): [optional]  # noqa: E501
             title_en (str, none_type): [optional]  # noqa: E501
-            lecturing_charge (str, none_type): [optional]  # noqa: E501
-            practical_charge (str, none_type): [optional]  # noqa: E501
             schedule_link (str, none_type): [optional]  # noqa: E501
             has_peps (bool): [optional]  # noqa: E501
         """
@@ -237,8 +231,6 @@ class EffectiveClassRepartition(ModelNormal):
             code (str): [optional]  # noqa: E501
             title_fr (str): [optional]  # noqa: E501
             title_en (str, none_type): [optional]  # noqa: E501
-            lecturing_charge (str, none_type): [optional]  # noqa: E501
-            practical_charge (str, none_type): [optional]  # noqa: E501
             schedule_link (str, none_type): [optional]  # noqa: E501
             has_peps (bool): [optional]  # noqa: E501
         """

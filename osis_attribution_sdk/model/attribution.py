@@ -101,13 +101,13 @@ class Attribution(ModelNormal):
             'type_text': (str,),  # noqa: E501
             'credits': (str, none_type,),  # noqa: E501
             'total_learning_unit_charge': (str,),  # noqa: E501
-            'has_peps': (bool,),  # noqa: E501
             'start_year': (int, none_type,),  # noqa: E501
             'function': (AttributionFunctionEnum,),  # noqa: E501
             'function_text': (str,),  # noqa: E501
             'lecturing_charge': (str, none_type,),  # noqa: E501
             'practical_charge': (str, none_type,),  # noqa: E501
             'links': (AttributionLinks,),  # noqa: E501
+            'has_peps': (bool,),  # noqa: E501
             'effective_class_repartition': ([EffectiveClassRepartition],),  # noqa: E501
         }
 
@@ -125,13 +125,13 @@ class Attribution(ModelNormal):
         'type_text': 'type_text',  # noqa: E501
         'credits': 'credits',  # noqa: E501
         'total_learning_unit_charge': 'total_learning_unit_charge',  # noqa: E501
-        'has_peps': 'has_peps',  # noqa: E501
         'start_year': 'start_year',  # noqa: E501
         'function': 'function',  # noqa: E501
         'function_text': 'function_text',  # noqa: E501
         'lecturing_charge': 'lecturing_charge',  # noqa: E501
         'practical_charge': 'practical_charge',  # noqa: E501
         'links': 'links',  # noqa: E501
+        'has_peps': 'has_peps',  # noqa: E501
         'effective_class_repartition': 'effective_class_repartition',  # noqa: E501
     }
 
@@ -184,13 +184,13 @@ class Attribution(ModelNormal):
             type_text (str): [optional]  # noqa: E501
             credits (str, none_type): [optional]  # noqa: E501
             total_learning_unit_charge (str): Total charge for learning unit year. [optional]  # noqa: E501
-            has_peps (bool): [optional]  # noqa: E501
             start_year (int, none_type): Start year of attribution. [optional]  # noqa: E501
             function (AttributionFunctionEnum): [optional]  # noqa: E501
             function_text (str): [optional]  # noqa: E501
             lecturing_charge (str, none_type): [optional]  # noqa: E501
             practical_charge (str, none_type): [optional]  # noqa: E501
             links (AttributionLinks): [optional]  # noqa: E501
+            has_peps (bool): [optional]  # noqa: E501
             effective_class_repartition ([EffectiveClassRepartition]): [optional]  # noqa: E501
         """
 
@@ -281,13 +281,13 @@ class Attribution(ModelNormal):
             type_text (str): [optional]  # noqa: E501
             credits (str, none_type): [optional]  # noqa: E501
             total_learning_unit_charge (str): Total charge for learning unit year. [optional]  # noqa: E501
-            has_peps (bool): [optional]  # noqa: E501
             start_year (int, none_type): Start year of attribution. [optional]  # noqa: E501
             function (AttributionFunctionEnum): [optional]  # noqa: E501
             function_text (str): [optional]  # noqa: E501
             lecturing_charge (str, none_type): [optional]  # noqa: E501
             practical_charge (str, none_type): [optional]  # noqa: E501
             links (AttributionLinks): [optional]  # noqa: E501
+            has_peps (bool): [optional]  # noqa: E501
             effective_class_repartition ([EffectiveClassRepartition]): [optional]  # noqa: E501
         """
 
