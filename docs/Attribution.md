@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **practical_charge** | **str, none_type** |  | [optional] 
 **links** | [**AttributionLinks**](AttributionLinks.md) |  | [optional] 
 **has_peps** | **bool** |  | [optional] 
+**is_partim** | **bool** |  | [optional] 
 **effective_class_repartition** | [**[EffectiveClassRepartition]**](EffectiveClassRepartition.md) |  | [optional] 
 **any string name** | **bool, date, datetime, dict, float, int, list, str, none_type** | any string name can be used but the value must be the correct type | [optional]
 

@@ -108,6 +108,7 @@ class Attribution(ModelNormal):
             'practical_charge': (str, none_type,),  # noqa: E501
             'links': (AttributionLinks,),  # noqa: E501
             'has_peps': (bool,),  # noqa: E501
+            'is_partim': (bool,),  # noqa: E501
             'effective_class_repartition': ([EffectiveClassRepartition],),  # noqa: E501
         }
 
@@ -132,6 +133,7 @@ class Attribution(ModelNormal):
         'practical_charge': 'practical_charge',  # noqa: E501
         'links': 'links',  # noqa: E501
         'has_peps': 'has_peps',  # noqa: E501
+        'is_partim': 'is_partim',  # noqa: E501
         'effective_class_repartition': 'effective_class_repartition',  # noqa: E501
     }
 
@@ -191,6 +193,7 @@ class Attribution(ModelNormal):
             practical_charge (str, none_type): [optional]  # noqa: E501
             links (AttributionLinks): [optional]  # noqa: E501
             has_peps (bool): [optional]  # noqa: E501
+            is_partim (bool): [optional]  # noqa: E501
             effective_class_repartition ([EffectiveClassRepartition]): [optional]  # noqa: E501
         """
 
@@ -288,6 +291,7 @@ class Attribution(ModelNormal):
             practical_charge (str, none_type): [optional]  # noqa: E501
             links (AttributionLinks): [optional]  # noqa: E501
             has_peps (bool): [optional]  # noqa: E501
+            is_partim (bool): [optional]  # noqa: E501
             effective_class_repartition ([EffectiveClassRepartition]): [optional]  # noqa: E501
         """
 
