@@ -84,7 +84,6 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
         print("Exception when calling ApplicationApi->application_create: %s\n" % e)
 ```
 
-
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -108,7 +107,6 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -179,7 +177,6 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
         print("Exception when calling ApplicationApi->application_delete: %s\n" % e)
 ```
 
-
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -203,7 +200,6 @@ void (empty response body)
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -269,7 +265,6 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
         print("Exception when calling ApplicationApi->application_list: %s\n" % e)
 ```
 
-
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -292,7 +287,6 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -372,7 +366,6 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
         print("Exception when calling ApplicationApi->application_update: %s\n" % e)
 ```
 
-
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -397,7 +390,6 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -463,7 +455,6 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
         print("Exception when calling ApplicationApi->applicationcoursescalendars_list: %s\n" % e)
 ```
 
-
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -486,7 +477,6 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -550,7 +540,6 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
         print("Exception when calling ApplicationApi->applications_summary_send: %s\n" % e)
 ```
 
-
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -573,7 +562,6 @@ void (empty response body)
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -639,7 +627,6 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
         print("Exception when calling ApplicationApi->attributionsabouttoexpire_list: %s\n" % e)
 ```
 
-
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -662,7 +649,6 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -738,7 +724,6 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
         print("Exception when calling ApplicationApi->attributionsabouttoexpire_renew: %s\n" % e)
 ```
 
-
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -762,7 +747,6 @@ void (empty response body)
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -828,7 +812,6 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
         print("Exception when calling ApplicationApi->my_charge_summary: %s\n" % e)
 ```
 
-
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -851,7 +834,6 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -919,7 +901,6 @@ with osis_attribution_sdk.ApiClient(configuration) as api_client:
         print("Exception when calling ApplicationApi->vacantcourses_list: %s\n" % e)
 ```
 
-
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -944,7 +925,6 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
 
 ### HTTP response details
 | Status code | Description | Response headers |
