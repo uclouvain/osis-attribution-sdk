@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **code** | **str** |  | [optional] 
 **title_fr** | **str** |  | [optional] 
 **title_en** | **str, none_type** |  | [optional] 
-**schedule_link** | **str, none_type** |  | [optional] 
+**links** | [**AttributionLinks**](AttributionLinks.md) |  | [optional] 
 **has_peps** | **bool** |  | [optional] 
 **any string name** | **bool, date, datetime, dict, float, int, list, str, none_type** | any string name can be used but the value must be the correct type | [optional]
 

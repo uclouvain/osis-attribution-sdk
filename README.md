@@ -133,6 +133,7 @@ Class | Method | HTTP request | Description
  - [Attribution](docs/Attribution.md)
  - [AttributionAboutToExpire](docs/AttributionAboutToExpire.md)
  - [AttributionAboutToExpireList](docs/AttributionAboutToExpireList.md)
+ - [AttributionClassLinks](docs/AttributionClassLinks.md)
  - [AttributionFunctionEnum](docs/AttributionFunctionEnum.md)
  - [AttributionLinks](docs/AttributionLinks.md)
  - [EffectiveClassRepartition](docs/EffectiveClassRepartition.md)

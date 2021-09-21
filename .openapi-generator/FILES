@@ -13,6 +13,7 @@ docs/Attribution.md
 docs/AttributionAboutToExpire.md
 docs/AttributionAboutToExpireList.md
 docs/AttributionApi.md
+docs/AttributionClassLinks.md
 docs/AttributionFunctionEnum.md
 docs/AttributionLinks.md
 docs/EffectiveClassRepartition.md
@@ -44,6 +45,7 @@ osis_attribution_sdk/model/application_update_command.py
 osis_attribution_sdk/model/attribution.py
 osis_attribution_sdk/model/attribution_about_to_expire.py
 osis_attribution_sdk/model/attribution_about_to_expire_list.py
+osis_attribution_sdk/model/attribution_class_links.py
 osis_attribution_sdk/model/attribution_function_enum.py
 osis_attribution_sdk/model/attribution_links.py
 osis_attribution_sdk/model/effective_class_repartition.py
@@ -64,4 +66,5 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_attribution_class_links.py
 tox.ini
