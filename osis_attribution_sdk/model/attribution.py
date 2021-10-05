@@ -100,7 +100,7 @@ class Attribution(ModelNormal):
             'type': (LearningUnitTypeEnum,),  # noqa: E501
             'type_text': (str,),  # noqa: E501
             'credits': (str, none_type,),  # noqa: E501
-            'total_learning_unit_charge': (str,),  # noqa: E501
+            'total_learning_unit_charge': (str, none_type,),  # noqa: E501
             'start_year': (int, none_type,),  # noqa: E501
             'function': (AttributionFunctionEnum,),  # noqa: E501
             'function_text': (str,),  # noqa: E501
@@ -185,7 +185,7 @@ class Attribution(ModelNormal):
             type (LearningUnitTypeEnum): [optional]  # noqa: E501
             type_text (str): [optional]  # noqa: E501
             credits (str, none_type): [optional]  # noqa: E501
-            total_learning_unit_charge (str): Total charge for learning unit year. [optional]  # noqa: E501
+            total_learning_unit_charge (str, none_type): Total charge for learning unit year. [optional]  # noqa: E501
             start_year (int, none_type): Start year of attribution. [optional]  # noqa: E501
             function (AttributionFunctionEnum): [optional]  # noqa: E501
             function_text (str): [optional]  # noqa: E501
@@ -283,7 +283,7 @@ class Attribution(ModelNormal):
             type (LearningUnitTypeEnum): [optional]  # noqa: E501
             type_text (str): [optional]  # noqa: E501
             credits (str, none_type): [optional]  # noqa: E501
-            total_learning_unit_charge (str): Total charge for learning unit year. [optional]  # noqa: E501
+            total_learning_unit_charge (str, none_type): Total charge for learning unit year. [optional]  # noqa: E501
             start_year (int, none_type): Start year of attribution. [optional]  # noqa: E501
             function (AttributionFunctionEnum): [optional]  # noqa: E501
             function_text (str): [optional]  # noqa: E501
