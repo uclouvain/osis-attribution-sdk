@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **type_text** | **str** |  | [optional] 
 **credits** | **str, none_type** |  | [optional] 
 **total_learning_unit_charge** | **str, none_type** | Total charge for learning unit year | [optional] 
+**percentage_allocation_charge** | **str** |  | [optional] 
 **start_year** | **int, none_type** | Start year of attribution | [optional] 
 **function** | [**AttributionFunctionEnum**](AttributionFunctionEnum.md) |  | [optional] 
 **function_text** | **str** |  | [optional] 
