@@ -11,7 +11,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "osis-attribution-sdk"
-VERSION = "1.18"
+VERSION = "1.20"
 # To install the library, run the following
 #
 # python setup.py install
